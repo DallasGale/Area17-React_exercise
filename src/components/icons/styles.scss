@@ -1,0 +1,37 @@
+@import '../../styles/breakpoints';
+
+.icons {
+    &__share {
+        cursor: pointer;
+        width: 100%;
+
+        &:hover {
+            animation: threeSixty 0.2s linear;
+            transition: all 0.2s; 
+        }
+
+        @include respond-to(phone-down) {
+            width: 40px;
+        }
+    }
+}
+
+
+@keyframes threeSixty {
+    0% {
+
+        // transform: scale(1.1);  
+        // fill: lightblue;
+    }
+
+    50% {
+        // transform: scale(1);  
+        transform: rotate(0deg);
+        // opacity: 0.5;
+        margin-right: -5px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

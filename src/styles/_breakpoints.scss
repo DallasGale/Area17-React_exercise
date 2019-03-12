@@ -1,0 +1,14 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "phone-down" {
+      @media (max-width: 768px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint == "phone-up" {
+        @media (max-width: 769px) {
+          @content;
+        }
+      }
+  }
+  

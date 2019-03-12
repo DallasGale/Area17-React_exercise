@@ -1,0 +1,96 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+
+.feature-tile {
+    background-size: cover;
+    background-position: center center;
+    color: $color-white;
+    height: auto;
+    display: block;
+    padding: 3px;
+    position: relative; 
+    @include respond-to(phone-down) {
+        color: $color-black;
+    }
+
+    &__contents {
+        // Ref: <FeatureTile /> compponent
+        // background-image is dynamically loaded in 'regular.component.jsx'
+        background-size: cover;
+        background-position: center center;
+        display: table;
+        font-size: 2em;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        @include respond-to(phone-down) {
+            height: 170px;
+        }
+    }
+    
+    @include respond-to(phone-down) {
+        margin-bottom: 15px;
+    }
+
+    &__article-details {
+        display: table-cell;
+        position: relative;
+        width: 100%;
+        vertical-align: bottom;
+        &-container {
+            background-color: rgba(0,0,0,0.5);
+            display: block;
+            height: auto;
+            padding: 6px 0 6px 12px;
+            position: relative;
+            transition:  background-color 1.5s;
+
+            @include respond-to(phone-down) {
+                background-color: $color-white;
+                padding-left: 0;
+            }
+        }
+
+        @include respond-to(phone-down) {
+            display: block;
+        }
+    }
+
+    &__share {
+        position: absolute;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+        top: 14px;
+
+        span {
+            color: $color-light-grey;
+            font-size: 12px;
+            float: right;
+            margin-top: 14px;
+        }
+
+        @include respond-to(phone-down) {
+            right: 0;
+            width: 76px;
+            height: 40px;
+            top: auto;
+            bottom: 0;
+        }
+    }
+
+
+    // Component styles
+    // <ArticleTitle />
+    .article-title {
+        font-size: 30px;
+        line-height: 32px;
+
+        @include respond-to(phone-down) {
+            font-size: 23px;
+            line-height: 26px;
+        }
+    }
+}

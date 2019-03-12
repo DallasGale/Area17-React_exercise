@@ -1,0 +1,99 @@
+@import '../../../../styles/breakpoints';
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.regular-tile {
+    background-size: cover;
+    background-position: center center;
+    color: $color-white;
+    display: block;
+    height: 212px;  
+    padding: 2px;
+    position: relative; 
+
+    @include respond-to(phone-down) {
+        color: $color-black;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    
+
+    &__contents {
+        // Ref: <FeatureTile /> compponent
+        // background-image is dynamically loaded in 'regular.component.jsx'
+        background-size: cover;
+        background-position: center center;
+        cursor: pointer;
+        display: table;
+        font-size: 2em;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        transition: all 1s;
+        &:hover {
+            .hovered-bottom-border {   
+                @include borderWidthTransition;
+            }
+        }
+
+        @include respond-to(phone-down) {
+            min-height: 170px;
+        }
+    }
+    
+
+    &__article-details {
+        display: table-cell;
+        position: relative;
+        width: 100%;
+        vertical-align: bottom;
+
+        &-container {
+            background-color: rgba(0,0,0,0.5);
+            display: block;
+            height: auto;
+            padding: 6px 0 6px 12px;
+            position: relative;
+            transition:  background-color 1.5s;
+
+            @include respond-to(phone-down) {
+                background-color: $color-white;
+                padding-left: 0;
+            }
+        }
+
+        &-title-row, &-author-row {
+            display: table-row;
+            vertical-align: middle;
+        }
+
+        @include respond-to(phone-down) {
+            display: block;
+        }
+    }
+
+    &__share {
+        position: absolute;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+        top: 14px;
+
+        span {
+            color: $color-light-grey;
+            font-size: 12px;
+            float: right;
+            margin-top: 14px;
+        }
+
+        @include respond-to(phone-down) {
+            right: 0;
+            width: 76px;
+            height: 40px;
+            top: auto;
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "articles": [
+        {
+            "id": 0,
+            "title": "Find the Perfect Dress for Special Occasions",
+            "image": "../images/articleBackgrounds/feature.jpeg",
+            "authorAvatar": "https://randomuser.me/api/portraits/women/59.jpg",
+            "authorName": "Jennifer Nicole Sullivan",
+            "authorDescription": "Vintage Clothing Expert",
+            "link": "",
+            "feature": true
+        },
+        {
+            "id": 1,
+            "title": "Attracting Butterflies to Your Garden",
+            "image": "../images/articleBackgrounds/butterfly.jpeg",
+            "authorAvatar": "https://randomuser.me/api/portraits/women/0.jpg",
+            "authorName": "Marie Ianotti",
+            "authorDescription": "Gardening Expert",
+            "link": "",
+            "feature": false
+        },
+        {
+            "id": 2,
+            "title": "The Absolute Beginner's Guide to Running",
+            "image": "../images/articleBackgrounds/runner.jpeg",
+            "authorAvatar": "https://randomuser.me/api/portraits/women/33.jpg",
+            "authorName": "Christine Luff",
+            "authorDescription": "Running Expert",
+            "link": "",
+            "feature": false
+        },
+        {
+            "id": 3,
+            "title": "DIY Live Edge Coffee Table",
+            "image": "../images/articleBackgrounds/coffeetable.jpeg",
+            "authorAvatar": "https://randomuser.me/api/portraits/women/21.jpg",
+            "authorName": "Stephanie White",
+            "authorDescription": "DIY Export",
+            "link": "",
+            "feature": false
+        },
+        {
+            "id": 4,
+            "title": "Best Free Attractions in New York City",
+            "image": "../images/articleBackgrounds/nyc.jpeg",
+            "authorAvatar": "https://randomuser.me/api/portraits/women/82.jpg",
+            "authorName": "Heather Cross",
+            "authorDescription": "New York City Travel Expert",
+            "link": "",
+            "feature": false
+        },
+        {
+            "id": 5,
+            "title": "Italian Sausage and Bell Pepper Pizza",
+            "image": "../images/articleBackgrounds/pizza.jpeg",
+            "authorAvatar": null,
+            "authorName": null,
+            "authorDescription": null,
+            "link": "",
+            "feature": false
+        },
+        {
+            "id": 6,
+            "title": "10 Mid Century Modern Items for Your Home",
+            "image": "../images/articleBackgrounds/smarthome.jpeg",
+            "authorAvatar": null,
+            "authorName": null,
+            "authorDescription": null,
+            "link": "",
+            "feature": false
+        }
+    ],
+    "trending": [
+        {
+            "id": 0,
+            "title": "3 Questions to Answer Before You Buy Your First Investment",
+            "image": "../images/articleBackgrounds/investment.jpeg",
+            "authorAvatar": "../images/authorAvatars/jk.png",
+            "authorName": "Joshua Kennon",
+            "authorDescription": "Investing for Beginners...",
+            "link": ""
+        },
+        {
+            "id": 1,
+            "title": "Pairing Food and Wine",
+            "image": "../images/articleBackgrounds/wine.jpeg",
+            "authorAvatar": "../images/authorAvatars/ss.png",
+            "authorName": "Stacey Slinkard",
+            "authorDescription": "Wine Expert",
+            "link": ""
+        },
+        {
+            "id": 2,
+            "title": "12 Quesionts to Expext on Your College Interview",
+            "image": "../images/articleBackgrounds/interview.jpeg",
+            "authorAvatar": "../images/authorAvatars/ag.png",
+            "authorName": "Allen Grove",
+            "authorDescription": "College Admissions Expert",
+            "link": ""
+        },
+        {
+            "id": 3,
+            "title": "How Not to Look Fat in White Pants",
+            "image": "../images/articleBackgrounds/whitepants.jpeg",
+            "authorAvatar": "../images/authorAvatars/cn.png",
+            "authorName": "Cynthia Nellis",
+            "authorDescription": "Fashion Expert",
+            "link": ""
+        },
+        {
+            "id": 4,
+            "title": "How to Make the Perfect Mother's Day Brunch",
+            "image": "../images/articleBackgrounds/brunch.jpeg",
+            "authorAvatar": "../images/authorAvatars/ss.png",
+            "authorName": "Linda Larsen",
+            "authorDescription": "Busy Cooks Expert",
+            "link": ""
+        }
+    ]
+}

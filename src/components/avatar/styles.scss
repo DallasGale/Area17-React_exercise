@@ -1,0 +1,15 @@
+@import '../../styles/breakpoints';
+
+.avatar {
+    background-size: cover;
+    background-position: center center;
+    border-radius: 42px;
+    height: 42px;
+    width: 42px;
+    display: block;
+    filter: grayscale(100%);
+
+    @include respond-to(phone-down) {
+        border: 2px solid white;
+    }
+}

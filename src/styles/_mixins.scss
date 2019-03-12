@@ -1,0 +1,15 @@
+@import './variables';
+
+@mixin tileHoverTransition {
+    background-color: $color-hover;
+    transition: all 0.8s;
+}
+@mixin titleHoverTransition {
+    border-bottom-color: $color-hover;
+    transition: all 0.2s;
+}
+
+@mixin borderWidthTransition {
+    width: 100%;
+    transition: all 0.2s;
+}

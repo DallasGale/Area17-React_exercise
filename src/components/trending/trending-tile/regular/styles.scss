@@ -1,0 +1,83 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+@import '../../../../styles/mixins';
+
+
+.trending-tile {
+    &__regular {
+        border-top: 2px solid $color-lighter-grey;
+        padding-top: 11px;
+        padding-bottom: 10px;
+        &:hover {
+            .trending-title {
+                @include titleHoverTransition;
+            }
+        }
+
+        @include respond-to(phone-down) {
+            padding-top: 20px;
+            padding-bottom: 23px;
+        }
+    }
+}
+
+.trending-details {
+    position: relative;
+
+    &__author-row {
+        .author-details__name, 
+        .author-details__description {
+            font-size: 15px;
+        }
+        .author-details__details {
+            padding-right: 27px;
+        }
+
+         // Absolute positions avatar to be over thumbnail image when on mobile
+        .author-details__avatar {
+            @include respond-to(phone-down) {
+                padding-right: 6px;    
+                position: absolute;
+                margin-left: -65px;
+                top: 50px;
+            }
+        }
+    }
+
+
+    &__share {
+        position: absolute;
+        right: 0;
+        border: 12px;
+        width: 40px;
+        height: 40px;
+        bottom: 0;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__mobile-grid {
+        display: table;
+    }
+
+    &__title-row {
+        line-height: 0;
+        margin-top: 0;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    &__thumbnail {
+        display: table-cell;
+        width: 130px;
+    }
+
+    &__content {
+        display: table-cell;
+        padding-left: 10px;
+        width: auto;
+        vertical-align: top;
+    }
+}

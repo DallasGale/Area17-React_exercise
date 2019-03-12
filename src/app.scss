@@ -1,0 +1,79 @@
+@import "./styles/breakpoints";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700');
+
+body {
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 50px;
+  @include respond-to(phone-down) {
+    padding: 20px 8px 0px;
+  }
+}
+
+// Parent div that has two columns (Article / Trending)
+.wrapper__grid {
+  display: table;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  @include respond-to(phone-down) {
+    display: block;
+  }
+}
+
+.process-h1 {
+  background: rgb(32, 32, 32);
+  color: rgb(226, 226, 226);
+  padding: 15px;
+  width: 100%;
+  font-family: 'Roboto slab', sans-serif;
+  position: fixed;
+  font-size: 1em;
+  top: 0px;
+  margin-top:0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+.image-container {
+  text-align: center;
+  position: relative;
+  display: table;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 100vh;
+  z-index: 0;
+  &__img {
+    display: table-cell;
+    width: 50%;
+  }
+  img {
+    height: 100vh;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.nav {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  left: 0;
+  z-index: 3;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+}

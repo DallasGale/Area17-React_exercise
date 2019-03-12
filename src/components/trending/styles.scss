@@ -1,0 +1,32 @@
+@import '../../styles/breakpoints';
+@import '../../styles/variables';
+
+.trending {
+    display: table-cell;
+    padding-left: 20px;
+    width: 30%;
+    vertical-align: top;
+    @include respond-to(phone-down) {
+        padding-left: 0;
+        padding-top: 14px;
+    }
+
+    &__tile-contents {
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    &__tile-title {
+        color: $color-black;
+        font-size: 22px;
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+    }
+
+    @include respond-to(phone-down) {
+        display: block;
+        width: 100%;
+    }
+}
